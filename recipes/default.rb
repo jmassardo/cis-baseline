@@ -7,7 +7,7 @@
 package 'auditd'
 
 template '/etc/audit/auditd.conf' do
-  source 'audit.conf.erb'
+  source 'auditd.conf.erb'
   notifies :restart, 'service[auditd]', :immediately
 end
 
