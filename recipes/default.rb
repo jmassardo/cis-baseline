@@ -18,4 +18,10 @@ end
 # Fix sysctl-* findings in CIS/DevSec baseline
 template '/etc/sysctl.conf' do
   source 'sysctl.conf.erb'
+  notifies :run, 'execute[Reload sysctl]', :immediately
+end
+
+execute 'Reload sysctl' do
+  command 'sysctl --system'
+  action :nothing
 end
