@@ -14,3 +14,8 @@ end
 service 'auditd' do
   action :nothing
 end
+
+# Fix sysctl-* findings in CIS/DevSec baseline
+template '/etc/sysctl.conf' do
+  source 'sysctl.conf.erb'
+end
