@@ -1,4 +1,3 @@
 # cis_baseline
 
-TODO: Enter the cookbook description here.
-
+This cookbook is another sample related to the Chef-Jenkins-Library project.
