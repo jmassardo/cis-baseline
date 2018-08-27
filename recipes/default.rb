@@ -17,6 +17,7 @@ end
 
 # Fix sysctl-* findings in CIS/DevSec baseline
 file '/etc/sysctl.conf' do
+  content ""
   action :create
   notifies :run, 'execute[Reload sysctl]', :immediately
 end
