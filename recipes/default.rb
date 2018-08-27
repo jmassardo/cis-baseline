@@ -16,16 +16,10 @@ service 'auditd' do
 end
 
 # Fix sysctl-* findings in CIS/DevSec baseline
-file '/etc/sysctl.conf' do
-  content ""
-  action :create
+template '/etc/sysctl.conf' do
+  source 'sysctl.conf.erb'
   notifies :run, 'execute[Reload sysctl]', :immediately
 end
-
-# template '/etc/sysctl.conf' do
-#   source 'sysctl.conf.erb'
-#   notifies :run, 'execute[Reload sysctl]', :immediately
-# end
 
 execute 'Reload sysctl' do
   command 'sysctl --system'
