@@ -1,6 +1,6 @@
-# cis_baseline CHANGELOG
+# cis-baseline CHANGELOG
 
-This file is used to list changes made in each version of the cis_baseline cookbook.
+This file is used to list changes made in each version of the cis-baseline cookbook.
 
 # 0.1.0
 

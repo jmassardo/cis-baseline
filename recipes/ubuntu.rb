@@ -1,5 +1,5 @@
 #
-# Cookbook:: cis_baseline
+# Cookbook:: cis-baseline
 # Recipe:: ubuntu
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.

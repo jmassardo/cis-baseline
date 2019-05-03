@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[cis_baseline::default]
+      - recipe[cis-baseline::default]
     verifier:
       inspec_tests:
         - test/integration/default

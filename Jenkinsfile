@@ -1,3 +1,3 @@
 @Library('chef_automation') _
 
-promoteCookbook 'cis_baseline'
+promoteCookbook 'cis-baseline'
