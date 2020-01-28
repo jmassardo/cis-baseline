@@ -13,6 +13,19 @@ unless os.windows?
 end
 
 # This is an example test, replace it with your own test.
-describe port(80), :skip do
-  it { should_not be_listening }
+control 'my control' do
+  only_if {file('test.txt').exist?}
+  describe port(80) do
+    it { should be_listening }
+  end
+end
+
+if file('test.txt').exist?
+  describe port(80) do
+    it { should be_listening }
+  end
+else
+  describe port(80) do
+    it { should_not be_listening }
+  end
 end
