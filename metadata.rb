@@ -4,7 +4,7 @@ maintainer_email 'james@dxrf.com'
 license 'All Rights Reserved'
 description 'Installs/Configures cis-baseline'
 long_description 'Installs/Configures cis-baseline'
-version '0.2.7'
+version '0.2.9'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 supports 'ubuntu'
 # The `issues_url` points to the location where issues for this cookbook are
