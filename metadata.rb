@@ -1,7 +1,7 @@
 name 'cis-baseline'
 maintainer 'James Massardo'
 maintainer_email 'james@dxrf.com'
-license 'All Rights Reserved'
+license 'Apache-2.0'
 description 'Installs/Configures cis-baseline'
 version '0.2.16'
 supports 'ubuntu'
